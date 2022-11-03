@@ -44,8 +44,8 @@
 // console.log(zece);
 // console.log(number);
 
-const a = 2;
-const b = 3;
+// const a = 2;
+// const b = 3;
 
 //  if (a > b) {
 //     console.log("true");
@@ -66,8 +66,8 @@ const b = 3;
 //     console.log("error");
 
 // }
-const c = 10;
-const e = 20;
+// const c = 10;
+// const e = 20;
 
 
 //  if (c ===10 || e === 20) {
@@ -108,18 +108,114 @@ const e = 20;
 //         console.log(el);
 //     }
 // })
-const first_number = prompt("First Number");
-const operator = promt("mathematecal operator");
-const second_number = promt("Second number");
+// const first_number = prompt("First Number");
+// const operator = promt("mathematecal operator");
+// const second_number = promt("Second number");
 
-if (operator  === "+"){
-    console.log(numrber(first_number) + Number (second_number));
-} else if (operator === "-"){
-    console.log(Number(first_number)  - Number(second_number));
-} else if (operator === "*"){
-    console.log(Number(first_number) * Number(second_number));
-} else if (operator === "/"){
-    console.log(Number(first_number) / Number(second_number));
-} else if (operator === "**"){
-    console.log(Number(first_number) ** Number(second_number));
-}
+// if (operator  === "+"){
+//     console.log(numrber(first_number) + Number (second_number));
+// } else if (operator === "-"){
+//     console.log(Number(first_number)  - Number(second_number));
+// } else if (operator === "*"){
+//     console.log(Number(first_number) * Number(second_number));
+// } else if (operator === "/"){
+//     console.log(Number(first_number) / Number(second_number));
+// } else if (operator === "**"){
+//     console.log(Number(first_number) ** Number(second_number));
+
+//  const arr = [];
+//  console.log(arr.length); 
+
+//  const arr_1 = [1,2,3,4,5,"salut", true]
+//  console.log(arr_1);
+
+// let obj = {
+//     name: "Ion",
+//     age:"29",
+//     gen:"M",
+// }
+// console.log(obj.name ,obj.age);
+
+const array = [
+  { name: "Ion", age: "29", gen: "M" },
+  { name: "Vasile", age: "19", gen: "M" },
+  { name: "Nina", age: "30", gen: "F" },
+  { name: "Larisa", age: "25", gen: "Fem" },
+];
+let user= []
+let user1= []
+let userFeminin = []
+ 
+
+
+ function genfiltre(array ) {
+    array.forEach(el =>{
+      if (el.gen === "M") {
+        user.push(el);
+      }
+      if (el.gen === "f" || el.gen === "F" || el.gen === "Fem") {
+        userFeminin.push(el);
+
+      }
+      if (el.age === "30") {
+        user1.push(el);
+    }
+})
+ }
+genfiltre(array);
+console.log(user);
+console.log(user1);
+console.log(userFeminin);
+// array.forEach(el=>{
+//     if (el.age > 20);{
+//         user.push(el)
+//         console.log(el);
+//     }console.log("err");
+// })
+// console.log(array[1].name);
+// array.forEach(el =>{
+//     console.log(el.name.includes("Ion"));
+// })
+
+// function name(params) {
+//     params.forEach(el =>{
+//         console.log(el);
+//  } )
+    
+// }
+// // name(array)
+// // name(arr_1)
+
+// function name_1(){
+//     console.log("salut");
+// }
+// name_1()
+// name_1()
+
+
+// function calculator(numarUnu, numarDoi,operator) {
+// let score = null;
+// score = numarUnu + operator + numarDoi
+// console.log(score);
+// }
+//  calculator(2,,8)
+//  console.log(user);
+//  let new_user = {
+//    name: "Larisa",
+//    age : "50",
+//    gen : "F",
+//    copil:{
+//     name:"Marin",
+//     age: "19",
+//     gen: "M"
+//    }
+// }
+// new_user.oras = "Chisinau";
+// new_user.oras = "Drochia";
+// console.log(new_user);
+
+// user.push(new_user)
+// user.unshift(new_user)
+// user.pop()
+// user.shift()
+// console.log(user);
